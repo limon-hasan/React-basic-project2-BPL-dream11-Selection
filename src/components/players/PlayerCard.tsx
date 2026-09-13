@@ -57,7 +57,6 @@ const PlayerCard = ({
 
   return (
     <div className="group overflow-hidden rounded-2xl border border-base-300 bg-base-100 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-      {/* Player Image */}
       <figure className="relative h-64 overflow-hidden bg-base-200">
         <img
           src={player.playerImg}
@@ -72,13 +71,10 @@ const PlayerCard = ({
           </span>
         </div>
 
-        {/* Gradient */}
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/60 to-transparent" />
       </figure>
 
-      {/* Content */}
       <div className="p-5">
-        {/* Name */}
         <div className="mb-4 flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
             <FaUser />
@@ -93,9 +89,7 @@ const PlayerCard = ({
           </div>
         </div>
 
-        {/* Player Info */}
         <div className="grid grid-cols-2 gap-3">
-          {/* Batting */}
           <div className="rounded-xl bg-base-200 p-3">
             <div className="mb-1 flex items-center gap-2 text-sm font-medium text-base-content/60">
               <GiCricketBat className="text-primary" />
@@ -105,7 +99,6 @@ const PlayerCard = ({
             <p className="font-semibold">{player.battingStyle}</p>
           </div>
 
-          {/* Bowling */}
           <div className="rounded-xl bg-base-200 p-3">
             <div className="mb-1 flex items-center gap-2 text-sm font-medium text-base-content/60">
               <GiCricket className="text-primary" />
@@ -118,7 +111,6 @@ const PlayerCard = ({
 
         <div className="my-5 border-t border-base-300" />
 
-        {/* Price + Button */}
         <div className="flex items-center justify-between gap-4">
           <div>
             <p className="text-sm text-base-content/60">Player Price</p>
